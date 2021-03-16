@@ -16,9 +16,9 @@ import by.tc.task01.entity.Appliance;
 import by.tc.task01.entity.Oven;
 import by.tc.task01.entity.criteria.Criteria;
 
-public class ApplianceDAOImpl implements ApplianceDAO{
+public class ApplianceDAOImpl implements ApplianceDAO{// решение не приведено полностью. Мжожет не тот код закоммитал?
 
-	private static final String SOURCE_PATH = "E:\\eclipseProject\\jc1-les25-examples-criteria-generics\\resources\\appliances_db.txt";
+	private static final String SOURCE_PATH = "E:\\eclipseProject\\jc1-les25-examples-criteria-generics\\resources\\appliances_db.txt";// абсолютные пути к файлам не используем, причину описала в прошлом таске
 	private static final String SOURCE_DEVIDER_APPLIANCE_PROPERTY = "\\s+:\\s+";
 
 	@Override
@@ -64,7 +64,7 @@ public class ApplianceDAOImpl implements ApplianceDAO{
 			}
 
 		} catch (FileNotFoundException e) {
-			e.printStackTrace();
+			e.printStackTrace();// аааааа? catch-и с print-ом, зачем мы учили раоту с исключениями, где выброс исключения на другой слои????
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
